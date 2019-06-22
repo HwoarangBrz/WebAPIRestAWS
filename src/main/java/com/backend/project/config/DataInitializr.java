@@ -22,6 +22,13 @@ public class DataInitializr implements ApplicationListener<ContextRefreshedEvent
 		List<User> users = repo.findAll();
 		if (users.isEmpty()) {
 			this.createUser("Hwoarang", "hwoarang@gmail.com", "123456");
+			this.createUser("Ricardo", "ricardo@gmail.com", "123456");
+			this.createUser("Rafael", "reafel@gmail.com", "123456");
+			this.createUser("Henrique", "henrique@gmail.com", "123456");
+			this.createUser("Hercules", "hercules@gmail.com", "123456");
+			this.createUser("Jade", "jade@gmail.com", "123456");
+			this.createUser("Sasha", "sasha@gmail.com", "123456");
+			this.createUser("Sadam", "sadam@gmail.com", "123456");
 		}
 	}
 	
