@@ -1,2 +1,2 @@
 # WebAPIRestAWS
-API with CRUD, token authentication, Travis DLP and AWS
+API with CRUD, token authentication, Lombok, Travis DLP and AWS
