@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,7 @@ public class UserController {
 	@Autowired
 	UserRepository repo;
 	
+	@Secured({"ROLE_ADMIN"})
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public Page<User> list(
 			@RequestParam("page") int page,
